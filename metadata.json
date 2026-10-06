@@ -1,0 +1,10 @@
+{
+  "name": "MeetFlow - Live Video Meeting Platform",
+  "description": "Meet, talk, share, and connect with modern real-time video, audio, screen sharing, chat, and participant controls. Owned & Created by Mirza Adeel.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "display-capture"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

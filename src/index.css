@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg-base: #07090e;
+  --color-bg-card: #0f141f;
+  --color-accent: #06b6d4;
+  --color-accent-hover: #0891b2;
+}
+
+[data-theme="obsidian"] {
+  --color-bg-base: #07090e;
+  --color-bg-card: #0f141f;
+  --color-accent: #06b6d4;
+  --color-accent-hover: #0891b2;
+}
+
+[data-theme="emerald"] {
+  --color-bg-base: #050a08;
+  --color-bg-card: #0c1612;
+  --color-accent: #10b981;
+  --color-accent-hover: #059669;
+}
+
+[data-theme="midnight"] {
+  --color-bg-base: #060a17;
+  --color-bg-card: #0d152b;
+  --color-accent: #3b82f6;
+  --color-accent-hover: #2563eb;
+}
+
+[data-theme="velvet"] {
+  --color-bg-base: #090611;
+  --color-bg-card: #140e24;
+  --color-accent: #a855f7;
+  --color-accent-hover: #9333ea;
+}
+
+[data-theme="amber"] {
+  --color-bg-base: #0c0a08;
+  --color-bg-card: #181410;
+  --color-accent: #f59e0b;
+  --color-accent-hover: #d97706;
+}
+
+[data-theme="nordic"] {
+  --color-bg-base: #f8fafc;
+  --color-bg-card: #ffffff;
+  --color-accent: #0284c7;
+  --color-accent-hover: #0369a1;
+  color-scheme: light;
+}
+
+.theme-light {
+  color-scheme: light;
+}
+
+.theme-light ::-webkit-scrollbar-track {
+  background: rgba(226, 232, 240, 0.6);
+}
+
+.theme-light ::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.5);
+}
+
+.theme-light ::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.7);
+}
+
+body {
+  background-color: var(--color-bg-base);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+@layer utilities {
+  @keyframes reactionFloat {
+    0% {
+      opacity: 0;
+      transform: translateY(0) scale(0.6) rotate(0deg);
+    }
+    15% {
+      opacity: 1;
+      transform: translateY(-30px) scale(1.1) rotate(-6deg);
+    }
+    30% {
+      opacity: 1;
+      transform: translateY(-70px) scale(1) rotate(6deg);
+    }
+    80% {
+      opacity: 0.9;
+      transform: translateY(-200px) scale(0.95) rotate(-3deg);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-280px) scale(0.8) rotate(0deg);
+    }
+  }
+
+  .animate-reaction-float {
+    animation: reactionFloat 2.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  }
+}
+
+/* Custom sleek scrollbar for panels */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.4);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.35);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.6);
+}
