@@ -10,7 +10,6 @@ import {
   Mic,
   Users,
   MessageSquare,
-  Sparkles,
   ArrowRight,
   Lock,
   Download,
@@ -164,14 +163,6 @@ export const Home: React.FC<HomeProps> = ({
       <main className="flex-1 flex flex-col items-center justify-center px-4 py-12 md:py-16 max-w-6xl mx-auto w-full">
         {/* Brand Hero Copy */}
         <div className="text-center max-w-3xl mb-10">
-          <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full ${
-            theme.isLight
-              ? 'bg-amber-50 border border-amber-200 text-amber-700'
-              : 'bg-indigo-950/70 border border-indigo-700/50 text-indigo-300'
-          } text-xs font-medium mb-3`}>
-            <Sparkles className="w-3.5 h-3.5 text-amber-500" />
-            <span>Windows Desktop App & Mobile PWA Ready · Owned by Mirza Adeel</span>
-          </div>
           <h1 className={`text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight ${theme.isLight ? 'text-slate-900' : 'text-white'} text-balance leading-tight`}>
             High-fidelity video meetings built for real-time teams.
           </h1>
@@ -389,11 +380,6 @@ export const Home: React.FC<HomeProps> = ({
                 </button>
               </form>
             </div>
-
-            <div className={`mt-6 pt-4 border-t ${theme.border} flex items-center justify-between text-xs ${theme.textMuted}`}>
-              <span>No account or download required</span>
-              <span>WebRTC Direct Mesh</span>
-            </div>
           </div>
         </div>
 
@@ -401,10 +387,6 @@ export const Home: React.FC<HomeProps> = ({
         <div id="install" className="w-full mt-10 p-6 md:p-8 rounded-3xl bg-gradient-to-r from-indigo-950/70 via-slate-900 to-slate-900 border border-indigo-800/40 shadow-2xl backdrop-blur-md">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
             <div className="space-y-2 text-center lg:text-left">
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300 text-xs font-semibold">
-                <Download className="w-3.5 h-3.5" />
-                <span>PWA Standalone App for Windows & Mobile</span>
-              </div>
               <h2 className="text-xl sm:text-2xl font-bold text-white">
                 Install MeetFlow on Windows PC, Android & iPhone
               </h2>
