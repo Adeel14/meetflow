@@ -88,9 +88,7 @@ export const Home: React.FC<HomeProps> = ({
       {/* Top Bar */}
       <header className={`flex items-center justify-between px-6 py-4 border-b ${theme.border} ${theme.isLight ? 'bg-white/80' : 'bg-slate-950/40'} backdrop-blur-md sticky top-0 z-30`}>
         <a href="/" className="text-lg font-bold tracking-tight flex items-center gap-2">
-          <div className="w-7 h-7 rounded-lg bg-gradient-to-tr from-yellow-400 to-amber-500 flex items-center justify-center text-slate-900 shadow-md shadow-amber-500/25 font-bold">
-            <Video className="w-4 h-4 text-white fill-current" />
-          </div>
+  <img src="/icon.svg" alt="" className="w-8 h-8 rounded-lg shadow-md shadow-red-500/30" />
           <span className={`font-bold tracking-tight ${theme.isLight ? 'text-slate-900' : 'text-white'}`}>MeetFlow</span>
         </a>
 
@@ -174,7 +172,7 @@ export const Home: React.FC<HomeProps> = ({
           <div className="flex flex-wrap items-center justify-center gap-3 mt-6">
             <button
               onClick={() => setShowInstallModal(true)}
-              className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-yellow-400 via-amber-400 to-yellow-400 hover:from-yellow-300 hover:to-amber-300 text-slate-900 font-semibold text-xs sm:text-sm shadow-xl shadow-amber-500/25 border border-amber-400/50 transition-transform active:scale-95 cursor-pointer"
+              className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 hover:from-yellow-300 hover:via-orange-400 hover:to-red-400 text-white font-semibold text-xs sm:text-sm shadow-xl shadow-red-500/25 border border-red-400/50 transition-transform active:scale-95 cursor-pointer"
             >
               <Download className="w-4 h-4" />
               <span>Install Windows & Mobile App</span>
@@ -465,7 +463,7 @@ export const Home: React.FC<HomeProps> = ({
           {/* Brand & Tagline */}
           <div className="flex flex-col sm:flex-row items-center gap-2 text-xs">
             <div className={`flex items-center gap-2 font-bold ${theme.isLight ? 'text-slate-900' : 'text-white'}`}>
-              <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
+              <img src="/icon.svg" alt="" className="w-4 h-4 rounded" />
               <span>MeetFlow</span>
             </div>
             <span className="hidden sm:inline text-slate-400">·</span>
