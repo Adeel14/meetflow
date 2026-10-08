@@ -60,8 +60,8 @@ export const Navbar: React.FC<NavbarProps> = ({
     <header className={`flex items-center justify-between px-4 py-2.5 ${theme.isLight ? 'bg-white border-slate-200 shadow-xs' : 'bg-slate-950 border-slate-800/80'} border-b z-20 shrink-0 transition-colors`}>
       {/* Zone 1: Single text element Brand mark */}
       <div className="flex items-center gap-2">
-        <a href="/" className={`text-base sm:text-lg font-bold tracking-tight ${theme.isLight ? 'text-slate-900 hover:text-sky-600' : 'text-white hover:text-indigo-400'} flex items-center gap-1.5 transition-colors`}>
-          <span className="w-2.5 h-2.5 rounded-full bg-blue-500 animate-pulse" />
+        <a href="/" className={`text-base sm:text-lg font-bold tracking-tight ${theme.isLight ? 'text-slate-900 hover:text-amber-600' : 'text-white hover:text-indigo-400'} flex items-center gap-1.5 transition-colors`}>
+          <span className="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse" />
           <span>MeetFlow</span>
         </a>
       </div>

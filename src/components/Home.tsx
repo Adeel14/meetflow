@@ -89,7 +89,7 @@ export const Home: React.FC<HomeProps> = ({
       {/* Top Bar */}
       <header className={`flex items-center justify-between px-6 py-4 border-b ${theme.border} ${theme.isLight ? 'bg-white/80' : 'bg-slate-950/40'} backdrop-blur-md sticky top-0 z-30`}>
         <a href="/" className="text-lg font-bold tracking-tight flex items-center gap-2">
-          <div className="w-7 h-7 rounded-lg bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center text-white shadow-md shadow-blue-500/25 font-bold">
+          <div className="w-7 h-7 rounded-lg bg-gradient-to-tr from-yellow-400 to-amber-500 flex items-center justify-center text-slate-900 shadow-md shadow-amber-500/25 font-bold">
             <Video className="w-4 h-4 text-white fill-current" />
           </div>
           <span className={`font-bold tracking-tight ${theme.isLight ? 'text-slate-900' : 'text-white'}`}>MeetFlow</span>
@@ -166,10 +166,10 @@ export const Home: React.FC<HomeProps> = ({
         <div className="text-center max-w-3xl mb-10">
           <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full ${
             theme.isLight
-              ? 'bg-sky-50 border border-sky-200 text-sky-700'
+              ? 'bg-amber-50 border border-amber-200 text-amber-700'
               : 'bg-indigo-950/70 border border-indigo-700/50 text-indigo-300'
           } text-xs font-medium mb-3`}>
-            <Sparkles className="w-3.5 h-3.5 text-sky-500" />
+            <Sparkles className="w-3.5 h-3.5 text-amber-500" />
             <span>Windows Desktop App & Mobile PWA Ready · Owned by Mirza Adeel</span>
           </div>
           <h1 className={`text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight ${theme.isLight ? 'text-slate-900' : 'text-white'} text-balance leading-tight`}>
@@ -183,7 +183,7 @@ export const Home: React.FC<HomeProps> = ({
           <div className="flex flex-wrap items-center justify-center gap-3 mt-6">
             <button
               onClick={() => setShowInstallModal(true)}
-              className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-blue-600 via-sky-600 to-blue-600 hover:from-blue-500 hover:to-sky-500 text-white font-semibold text-xs sm:text-sm shadow-xl shadow-blue-500/20 border border-blue-400/40 transition-transform active:scale-95 cursor-pointer"
+              className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-yellow-400 via-amber-400 to-yellow-400 hover:from-yellow-300 hover:to-amber-300 text-slate-900 font-semibold text-xs sm:text-sm shadow-xl shadow-amber-500/25 border border-amber-400/50 transition-transform active:scale-95 cursor-pointer"
             >
               <Download className="w-4 h-4" />
               <span>Install Windows & Mobile App</span>
@@ -219,7 +219,7 @@ export const Home: React.FC<HomeProps> = ({
                 <div className="flex items-center gap-2.5">
                   <div className={`w-9 h-9 rounded-xl ${
                     theme.isLight
-                      ? 'bg-sky-50 text-sky-600 border border-sky-200'
+                      ? 'bg-amber-50 text-amber-600 border border-amber-200'
                       : 'bg-indigo-600/20 text-indigo-400 border border-indigo-500/30'
                   } flex items-center justify-center`}>
                     <Plus className="w-5 h-5" />
@@ -244,7 +244,7 @@ export const Home: React.FC<HomeProps> = ({
                     placeholder="e.g. Design Architecture Review"
                     className={`w-full ${
                       theme.isLight
-                        ? 'bg-slate-50 border-slate-200 text-slate-900 placeholder-slate-400 focus:border-sky-500 focus:bg-white'
+                        ? 'bg-slate-50 border-slate-200 text-slate-900 placeholder-slate-400 focus:border-amber-500 focus:bg-white'
                         : 'bg-slate-950 border-slate-800 text-slate-100 placeholder-slate-500 focus:border-indigo-500'
                     } border rounded-xl px-3.5 py-2.5 text-xs sm:text-sm focus:outline-none transition-colors`}
                   />
@@ -258,7 +258,7 @@ export const Home: React.FC<HomeProps> = ({
                       checked={usePassword}
                       onChange={(e) => setUsePassword(e.target.checked)}
                       className={`rounded ${
-                        theme.isLight ? 'border-slate-300 bg-white text-sky-600' : 'border-slate-700 bg-slate-950 text-indigo-600'
+                        theme.isLight ? 'border-slate-300 bg-white text-amber-600' : 'border-slate-700 bg-slate-950 text-indigo-600'
                       } focus:ring-0 focus:ring-offset-0`}
                     />
                     <span>Require a meeting password</span>
@@ -276,7 +276,7 @@ export const Home: React.FC<HomeProps> = ({
                           placeholder="Create meeting passcode"
                           className={`w-full ${
                             theme.isLight
-                              ? 'bg-slate-50 border-slate-200 text-slate-900 placeholder-slate-400 focus:border-sky-500 focus:bg-white'
+                              ? 'bg-slate-50 border-slate-200 text-slate-900 placeholder-slate-400 focus:border-amber-500 focus:bg-white'
                               : 'bg-slate-950 border-slate-800 text-slate-100 placeholder-slate-500 focus:border-indigo-500'
                           } border rounded-xl pl-9 pr-3.5 py-2 text-xs focus:outline-none transition-colors`}
                         />
@@ -292,7 +292,7 @@ export const Home: React.FC<HomeProps> = ({
                   } border rounded-xl p-3 flex items-center justify-between`}>
                     <div className="min-w-0 pr-2">
                       <span className={`text-[11px] ${theme.textMuted} block`}>Assigned Room ID</span>
-                      <span className={`text-xs font-mono font-medium ${theme.isLight ? 'text-sky-700' : 'text-indigo-300'}`}>{previewId}</span>
+                      <span className={`text-xs font-mono font-medium ${theme.isLight ? 'text-amber-700' : 'text-indigo-300'}`}>{previewId}</span>
                     </div>
                     <button
                       type="button"
@@ -436,7 +436,7 @@ export const Home: React.FC<HomeProps> = ({
         {/* Feature Highlights Grid */}
         <div id="features" className={`w-full mt-12 pt-12 border-t ${theme.border} grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6`}>
           <div className={`flex flex-col p-4 rounded-xl ${theme.isLight ? 'bg-white border-slate-200 shadow-sm' : 'bg-slate-900/50 border-slate-800'} border`}>
-            <div className={`w-8 h-8 rounded-lg ${theme.isLight ? 'bg-sky-50 text-sky-600' : 'bg-indigo-900/50 text-indigo-400'} flex items-center justify-center mb-3`}>
+            <div className={`w-8 h-8 rounded-lg ${theme.isLight ? 'bg-amber-50 text-amber-600' : 'bg-indigo-900/50 text-indigo-400'} flex items-center justify-center mb-3`}>
               <Video className="w-4 h-4" />
             </div>
             <h3 className={`text-xs font-semibold ${theme.isLight ? 'text-slate-800' : 'text-slate-200'}`}>Real-time WebRTC</h3>
@@ -456,7 +456,7 @@ export const Home: React.FC<HomeProps> = ({
           </div>
 
           <div className={`flex flex-col p-4 rounded-xl ${theme.isLight ? 'bg-white border-slate-200 shadow-sm' : 'bg-slate-900/50 border-slate-800'} border`}>
-            <div className={`w-8 h-8 rounded-lg ${theme.isLight ? 'bg-sky-50 text-sky-600' : 'bg-indigo-900/50 text-indigo-400'} flex items-center justify-center mb-3`}>
+            <div className={`w-8 h-8 rounded-lg ${theme.isLight ? 'bg-amber-50 text-amber-600' : 'bg-indigo-900/50 text-indigo-400'} flex items-center justify-center mb-3`}>
               <Monitor className="w-4 h-4" />
             </div>
             <h3 className={`text-xs font-semibold ${theme.isLight ? 'text-slate-800' : 'text-slate-200'}`}>HD Screen Sharing</h3>
@@ -483,7 +483,7 @@ export const Home: React.FC<HomeProps> = ({
           {/* Brand & Tagline */}
           <div className="flex flex-col sm:flex-row items-center gap-2 text-xs">
             <div className={`flex items-center gap-2 font-bold ${theme.isLight ? 'text-slate-900' : 'text-white'}`}>
-              <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
+              <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
               <span>MeetFlow</span>
             </div>
             <span className="hidden sm:inline text-slate-400">·</span>
